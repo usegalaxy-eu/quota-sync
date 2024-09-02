@@ -11,7 +11,7 @@ filename: 'Quota Request Form (Responses).tsv'
 Then you can run it like:
 
 ```
-./gdrive export {google_file_id} --mime text/tab-separated-values --force
+BEARER_TOKEN_FILE=serviceaccounttoken.json GOOGLE_DRIVE_FILE_ID=<you can get the id from the files url> FILE_NAME='Quota Request Form (Responses).tsv' python download.py
 CONFIG_FILE=conf.yaml python process.py
 ```
 
